@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="2dp"
+    app:cardCornerRadius="18dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp">
+    <LinearLayout
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:padding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:text="Title"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#000"/>
+    <TextView
+        android:padding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/body"
+        android:text="body"
+        android:textColor="#000"
+        android:textSize="17sp" />
+    <TextView
+        android:padding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/source"
+        android:textSize="17sp"
+        android:text="Source"
+        android:textColor="#000"/>
+<TextView
+    android:padding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/link"
+    android:autoLink="web"
+    android:text="Link"
+        android:textSize="16sp"
+    android:gravity="start"
+       android:textColorLink="#238FE4"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

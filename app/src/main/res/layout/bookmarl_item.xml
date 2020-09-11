@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:layout_margin="5dp">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question"
+            android:padding="8dp"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:id="@+id/question"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Answer"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:textColor="#000"
+            android:id="@+id/answer"/>
+        <Button
+            android:layout_width="30dp"
+            android:layout_gravity="start"
+            android:layout_height="30dp"
+            android:padding="6dp"
+            android:background="@drawable/delete"
+            android:id="@+id/delete"/>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
