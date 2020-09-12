@@ -1,4 +1,4 @@
-package com.stark.quizzer;
+package com.stark.quizzer.Fragments;
 
 import android.app.Dialog;
 import android.content.Intent;
@@ -14,9 +14,11 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.stark.quizzer.ModelClasses.CategoriesModel;
+import com.stark.quizzer.R;
+import com.stark.quizzer.adapters.RecyclerViewAdapter;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import androidx.annotation.NonNull;
@@ -83,7 +85,7 @@ DatabaseReference databaseReference;
         recyclerViewAdapter.setOnItemClickListner(new RecyclerViewAdapter.onItemClickListner() {
             @Override
             public void onClick(int position,String title,int sets) {
-                Intent intent=new Intent(getActivity(),sets.class);
+                Intent intent=new Intent(getActivity(), com.stark.quizzer.Activities.sets.class);
                 intent.putExtra("title",title);
                 intent.putExtra("position",position);
                 startActivity(intent);

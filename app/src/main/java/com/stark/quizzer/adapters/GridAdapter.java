@@ -1,4 +1,4 @@
-package com.stark.quizzer;
+package com.stark.quizzer.adapters;
 
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -6,6 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+
+import com.stark.quizzer.Activities.Questions;
+import com.stark.quizzer.R;
 
 import java.util.List;
 
@@ -51,7 +54,7 @@ public class GridAdapter extends BaseAdapter {
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent questionIntent=new Intent(parent.getContext(),Questions.class);
+                Intent questionIntent=new Intent(parent.getContext(), Questions.class);
                 questionIntent.putExtra("category",category);
                 questionIntent.putExtra("setId",sets.get(position));
                 parent.getContext().startActivity(questionIntent);

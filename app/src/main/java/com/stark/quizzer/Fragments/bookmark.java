@@ -1,4 +1,4 @@
-package com.stark.quizzer;
+package com.stark.quizzer.Fragments;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -6,15 +6,16 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toolbar;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.stark.quizzer.ModelClasses.QuestionModel;
+import com.stark.quizzer.R;
+import com.stark.quizzer.adapters.BookmarkAdapter;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;

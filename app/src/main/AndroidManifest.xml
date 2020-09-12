@@ -15,7 +15,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
-        <activity android:name=".Quizzer_signup">
+        <activity android:name=".Activities.Quizzer_signup">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,11 +24,11 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".Questions" />
-        <activity android:name=".ScoreActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activities.Questions" />
+        <activity android:name=".Activities.ScoreActivity" />
+        <activity android:name=".Activities.MainActivity">
             </activity>
-        <activity android:name=".sets" />
+        <activity android:name=".Activities.sets" />
     </application>
 
 </manifest>

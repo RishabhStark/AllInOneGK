@@ -1,4 +1,4 @@
-package com.stark.quizzer;
+package com.stark.quizzer.ModelClasses;
 
 public class QuestionModel {
     private String id,question,A,B,C,D,answer,set;

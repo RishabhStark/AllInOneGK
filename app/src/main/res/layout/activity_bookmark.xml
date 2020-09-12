@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".bookmark">
+    tools:context=".Fragments.bookmark">
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/bookmaek"
         android:layout_width="match_parent"

@@ -1,20 +1,17 @@
-package com.stark.quizzer;
+package com.stark.quizzer.utility;
 
-import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
+
+import com.stark.quizzer.Fragments.CurrentAffairs;
+import com.stark.quizzer.R;
 
 import java.util.Calendar;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.DialogFragment;
-import androidx.fragment.app.FragmentManager;
 
 public class DatePicker extends DialogFragment{
 

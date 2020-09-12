@@ -1,9 +1,12 @@
-package com.stark.quizzer;
+package com.stark.quizzer.adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.stark.quizzer.ModelClasses.CurrentAffairs_Model;
+import com.stark.quizzer.R;
 
 import java.util.List;
 
@@ -12,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class CurrentAffairsAdapter extends RecyclerView.Adapter<CurrentAffairsAdapter.CAViewHolder> {
     List<CurrentAffairs_Model> list;
+
 
     public CurrentAffairsAdapter(List<CurrentAffairs_Model> calist) {
         list=calist;
@@ -37,7 +41,6 @@ public class CurrentAffairsAdapter extends RecyclerView.Adapter<CurrentAffairsAd
     public int getItemCount() {
         return list.size();
     }
-
     class CAViewHolder extends RecyclerView.ViewHolder {
         TextView title,body;
         public CAViewHolder(@NonNull View itemView) {

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.stark.quizzer.Quizzer_signup"
+    tools:context="com.stark.quizzer.Activities.Quizzer_signup"
     android:background="@color/colorPrimaryDark">
     <androidx.cardview.widget.CardView
 

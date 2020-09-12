@@ -1,8 +1,12 @@
-package com.stark.quizzer;
+package com.stark.quizzer.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.GridView;
+
+import com.stark.quizzer.Fragments.Home_Fragment;
+import com.stark.quizzer.R;
+import com.stark.quizzer.adapters.GridAdapter;
 
 import java.util.List;
 
@@ -23,7 +27,7 @@ private List<String> sets;
         toolbar=findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         intent=getIntent();
-        sets=Home_Fragment.categoriesModelList.get(intent.getIntExtra("position",0)).getSets();
+        sets= Home_Fragment.categoriesModelList.get(intent.getIntExtra("position",0)).getSets();
         getSupportActionBar().setTitle(intent.getStringExtra("title"));
         gridView=findViewById(R.id.grid);
         adapter=new GridAdapter(sets,intent.getStringExtra("title"));

@@ -1,4 +1,4 @@
-package com.stark.quizzer;
+package com.stark.quizzer.Activities;
 
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,26 +7,25 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Toast;
 
-import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.gson.Gson;
+import com.stark.quizzer.Fragments.CurrentAffairs;
+import com.stark.quizzer.Fragments.Home_Fragment;
+import com.stark.quizzer.Fragments.bookmark;
+import com.stark.quizzer.Fragments.news_fragment;
+import com.stark.quizzer.R;
+import com.stark.quizzer.utility.NewsApi;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -68,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     public boolean onOptionsItemSelected(MenuItem item) {
 
         if (item.getItemId() == R.id.logout) {
-            new AlertDialog.Builder(MainActivity.this,R.style.Theme_MaterialComponents_Light_DarkActionBar_Bridge)
+            new AlertDialog.Builder(MainActivity.this,R.style.AlertDialog)
                     .setTitle("Logout").setMessage("Are you sure,you want to Logout?").setPositiveButton("Logout"
                     , new DialogInterface.OnClickListener() {
                         @Override

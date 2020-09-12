@@ -1,4 +1,4 @@
-package com.stark.quizzer;
+package com.stark.quizzer.ModelClasses;
 
 public class CurrentAffairs_Model {
     private String title,body;

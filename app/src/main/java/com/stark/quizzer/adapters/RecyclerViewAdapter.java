@@ -1,15 +1,15 @@
-package com.stark.quizzer;
+package com.stark.quizzer.adapters;
 
 import androidx.annotation.NonNull;
 
-import android.content.Intent;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
+import com.stark.quizzer.ModelClasses.CategoriesModel;
+import com.stark.quizzer.R;
 
 import java.util.List;
 

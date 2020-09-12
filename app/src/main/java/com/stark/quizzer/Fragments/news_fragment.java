@@ -1,4 +1,4 @@
-package com.stark.quizzer;
+package com.stark.quizzer.Fragments;
 
 import android.app.Dialog;
 import android.os.Bundle;
@@ -8,7 +8,11 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.google.firebase.database.FirebaseDatabase;
+import com.stark.quizzer.ModelClasses.Articles;
+import com.stark.quizzer.ModelClasses.news_data;
+import com.stark.quizzer.R;
+import com.stark.quizzer.adapters.CurrentAffairsAdapter;
+import com.stark.quizzer.adapters.News_Adapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,17 +20,16 @@ import java.util.List;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-import static com.stark.quizzer.MainActivity.newsApi;
+import static com.stark.quizzer.Activities.MainActivity.newsApi;
 
 public class news_fragment extends Fragment {
-    String key="e2ef015020784d15a53c5bd9255488de";
+
     RecyclerView newsrecyclerView;
     List<Articles> articlesList=new ArrayList<>();
     News_Adapter newsAdapter;
@@ -51,12 +54,14 @@ public class news_fragment extends Fragment {
         dialog.getWindow().setLayout(LinearLayout.LayoutParams.WRAP_CONTENT,LinearLayout.LayoutParams.WRAP_CONTENT);
         dialog.setCancelable(false);
         dialog.show();
-        Call<news_data> newsDataCall=newsApi.getNews("in",key);
+        Call<news_data> newsDataCall=newsApi.getNews("in", "123");
         newsDataCall.enqueue(new Callback<news_data>() {
 
             @Override
             public void onResponse(Call<news_data> call, Response<news_data> response) {
                 if(!response.isSuccessful()) {
+                    dialog.dismiss();
+                    Toast.makeText(getActivity(), "couldn't fetch News!", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 news_data newsData=response.body();

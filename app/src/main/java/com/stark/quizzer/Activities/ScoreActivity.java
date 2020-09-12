@@ -1,8 +1,10 @@
-package com.stark.quizzer;
+package com.stark.quizzer.Activities;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.stark.quizzer.R;
 
 import androidx.appcompat.app.AppCompatActivity;
 

@@ -1,4 +1,4 @@
-package com.stark.quizzer;
+package com.stark.quizzer.ModelClasses;
 
 
 import android.net.Uri;

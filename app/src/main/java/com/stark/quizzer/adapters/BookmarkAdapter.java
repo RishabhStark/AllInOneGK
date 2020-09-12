@@ -1,14 +1,13 @@
-package com.stark.quizzer;
+package com.stark.quizzer.adapters;
 
-import android.content.Context;
-import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.google.gson.Gson;
+import com.stark.quizzer.ModelClasses.QuestionModel;
+import com.stark.quizzer.R;
 
 import java.util.List;
 
